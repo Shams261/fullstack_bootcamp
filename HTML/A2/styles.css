@@ -1,0 +1,31 @@
+body {
+  background-color: #fdfcdc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+dt {
+  /* background-color: #99c1de; */
+  color: #023e8a;
+  font: bold 30px Helvetica, Arial, sans-serif;
+  margin: 1em 0;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+dd {
+  color: #ef233c;
+  font: 40px Helvetica, Arial, sans-serif;
+  margin: 10px 5px 5px 50px;
+  padding: 0px;
+  white-space: nowrap;
+}
+.tel::after {
+  content: "\2706";
+  padding: 15px;
+  color: #00afb9;
+}
+dd:hover {
+  background-color: #d9d9d9;
+}
