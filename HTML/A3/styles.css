@@ -1,0 +1,23 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  background-color: #0b090a;
+}
+button {
+  padding: 20px;
+  color: #14213d;
+  align-items: center;
+  cursor: pointer;
+  border-color: #14213d;
+  font-size: 14px;
+}
+button:hover {
+  transform: scale(1.06);
+  color: #f72585;
+  box-shadow: 10px 10px 8px;
+}
+button {
+  transition: 0.2ms;
+}
