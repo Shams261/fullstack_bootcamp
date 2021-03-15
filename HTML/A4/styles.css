@@ -1,0 +1,210 @@
+html {
+  background-color: #52b788;
+}
+
+nav {
+  background-color: #52b788;
+  font-size: 1.8rem;
+  font-family: Georgia;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50px;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.5s ease-in-out;
+}
+a:hover {
+  background-color: burlywood;
+  transform: scale(1.06);
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 390px;
+}
+
+@media screen and (max-width: 530px) {
+  nav,
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.photo {
+  padding: 36em;
+  background-size: auto 100%;
+  background-image: url("./rsz_h1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #52b788;
+
+  animation-name: moving;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moving {
+  0% {
+    background-image: url("./rsz_h1.jpg");
+  }
+  20% {
+    background-image: url("./rsz_h2.jpg");
+  }
+  40% {
+    background-image: url("./rsz_h3.jpg");
+  }
+  60% {
+    background-image: url("./rsz_h4.jpg");
+  }
+  80% {
+    background-image: url("./rsz_h5.jpg");
+  }
+  100% {
+    background-image: url("./rsz_h6.jpg");
+  }
+}
+
+.card {
+  background: #fff;
+  border-radius: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 3rem;
+  max-width: 500px;
+  overflow: hidden;
+  transform: rotate(-5deg);
+  transition: transform 0.2s;
+  background-color: #52b788;
+  display: inline-block;
+}
+
+.card-content p {
+  margin: 0;
+}
+
+.card:hover {
+  transform: rotate(0);
+}
+
+.card-content,
+.card footer {
+  padding: 2rem;
+}
+
+.card-footer {
+  align-items: center;
+  background: rgb(92, 191, 187);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 191, 187, 1) 0%,
+    rgba(116, 214, 144, 1) 100%
+  );
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+}
+
+.thumb {
+  border-radius: 100%;
+  border: 4px solid #fff;
+  height: 60px;
+  margin: 0 1.5rem;
+  transition: transform 0.3s;
+  width: 60px;
+}
+
+.card:hover .thumb {
+  transform: scale(1.15);
+}
+
+@media screen and (min-width: 768px) {
+  .card-content {
+    padding: 4rem;
+  }
+  .card footer {
+    padding: 2rem 4rem;
+  }
+}
+.footer-container {
+  padding: 4rem 0;
+  background-color: #212329;
+}
+.footer {
+  width: 80%;
+  height: 40vh;
+  background-color: #212329;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+.footer-heading a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover {
+  color: red;
+  transition: 0.3s ease-out;
+}
+
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+#footer-email {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+#footer-email-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: red;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: lightblue;
+  transition: all 0.4s ease-out;
+}
+
+@media only screen and (max-width: 540px) {
+  .footer {
+    height: 50vh;
+  }
+  .footer-email-form {
+    margin-top: 4rem;
+  }
+}
